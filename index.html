@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vhulenda Mashamba Portfolio</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="home" id="homepage">
+      <header>
+        <nav>
+          <div class="navItem">Home</div>
+          <div class="navItem">About Me</div>
+          <div class="navItem">Contact Me</div>
+        </nav>
+      </header>
+
+      <div class="left-side">
+        <h1>Hello, it's me</h1>
+        <h2><span class="typing-effect">Vhulenda Mashamba</span></h2>
+        <p>I'm an aspiring <span class="glow">Software Engineer</span></p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/SMOKE484"
+            target="_blank"
+            class="social-icon github"
+          ></a>
+          <a
+            href="https://wa.me/+27662591467"
+            target="_blank"
+            class="social-icon whatsapp"
+          ></a>
+          <a
+            href="mailto:vhulendamashamba4@gmail.com"
+            target="_blank"
+            class="social-icon linkedin"
+          ></a>
+        </div>
+        <button class="cv">Download CV</button>
+      </div>
+      <div class="right-side">
+        <div class="image-circle">
+          <img src="portfolioProfile.png" alt="Vhulenda Mashamba" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section class="about" id="aboutPage">
+      <h1>About Me</h1>
+      <div class="about-content">
+        <!-- Introduction Section -->
+        <div class="intro">
+          <p>
+            Hi, I’m <strong>Vhulenda Mashamba</strong>, a passionate third-year
+            Computer Science and Information Systems student at the University
+            of Witwatersrand aspiring to become a software engineer. I'm good in
+            creating efficient and innovative solutions to complex problems.
+          </p>
+        </div>
+
+        <!-- Split Grid for Skills and Projects -->
+        <div class="grid">
+          <div
+            class="skills"
+            data-aos="fade-right"
+            data-aos-duration="1700"
+            data-aos-delay="150"
+          >
+            <h2>Skills & Expertise</h2>
+            <ul>
+              <li>Programming Languages:JavaScript, Python, Java, C++, C#</li>
+              <li>Web(/App) Development: HTML, CSS, React/Reactjs, Node.js</li>
+              <li>Database Management: SQL, MongoDB, Firebase</li>
+              <li>Version Control: Git, GitHub</li>
+              <li>UX/UI: Figma</li>
+            </ul>
+          </div>
+          <div
+            class="projects"
+            data-aos="fade-left"
+            data-aos-duration="1700"
+            data-aos-delay="250"
+          >
+            <h2>Projects & Achievements</h2>
+            <p>
+              <strong>1. Real World Website(s):</strong> Real world website
+              showcasing my front end skills.
+              <a href="https://github.com/SMOKE484">View on GitHub</a>
+            </p>
+            <p>
+              <strong>2. Freelancer Management Platform:</strong>A vanilla
+              JavaScript web application with Firebase backend designed to
+              streamline freelancer-client collaborations.
+              <a href="https://github.com/FREELYNK2/FreeLancer-Management"
+                >View on GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div
+            class="projects"
+            data-aos="fade-left"
+            data-aos-duration="1700"
+            data-aos-delay="250"
+          >
+            <h2>Current Projects In The Works</h2>
+            <p>
+              <strong>1.Amacusi Farming :</strong> A real Client website for a
+              farmer in Mpumalanga who sells poultry and other farm animals to
+              restaurants. The Website will allow the client's customers make
+              orders online instead of manual order making. The website will
+              also have an admin side where the client will manage orders,
+              inventory and track other things such as what product sells the
+              most and brings most money for better decision making for the
+              business.
+              <a href="https://github.com/SMOKE484/Amacusi-Farming"
+                >View on GitHub</a
+              >
+            </p>
+            <p>
+              <strong>2. BarberFlow :</strong> Traditional barber shops use
+              paper sign-in sheets, leading to chaotic queues and frustrated
+              customers. BarberFlow is a digital barber shop queue management
+              system designed to modernize the traditional paper-based process.
+              It allows customers to join a virtual waiting list from their
+              phones by entering their name and selecting their preferred barber
+              (or opting for the next available). Barbers can view and manage
+              the live queue through an intuitive dashboard, marking customers
+              as "in service" or "completed" to keep the flow organized. The
+              system provides real-time updates to customers on their queue
+              position and estimated wait time. Shop owners gain access to an
+              analytics dashboard that tracks peak hours, barber productivity,
+              and service trends. Designed for simplicity, BarberFlow works on
+              any device, whether it's a customer's smartphone, a shop tablet,
+              or an admin's computer, ensuring a seamless experience for all
+              users while eliminating the chaos of paper lists.
+              <a href="https://github.com/SMOKE484/BarberFlow"
+                >View on GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const gridItems = document.querySelectorAll(".grid div");
+
+        gridItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            // Collapse all grids
+            gridItems.forEach((el) => el.classList.remove("expanded"));
+
+            // Expand clicked grid
+            this.classList.add("expanded");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
