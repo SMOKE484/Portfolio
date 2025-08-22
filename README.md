@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 ## 🌐 Live Demo
 
-[View Live Portfolio](https://your-username.github.io/portfolio) <!-- Replace with your actual deployment URL -->
+[View Live Portfolio](https://smoke484.github.io/Portfolio/) 
 
 ## 🚀 Features
 
